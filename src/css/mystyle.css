@@ -1,0 +1,123 @@
+:root{
+    --red-theme: #E50914;
+    --blue-theme: #0000ff;
+    --orange-theme: #f39d08;
+}
+ /* Elementos base*/
+
+@font-face{
+    font-family: "Open Sans";
+    src: url('../assets/fonts/OpenSans-Regular.ttf')
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-color: #f2f2f2;
+  font-family: "Open Sans";
+}
+
+.container{
+ 
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    font-family: 'Fredoka One', cursive;
+    line-height: 2;
+    font-size: 2.3rem;
+    color: var(--red-theme);
+}
+
+header .logo > span{
+    color: var(--blue-theme);
+}
+
+header nav {
+    margin-right: 20px;
+}
+
+header nav a{
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--orange-theme);
+}
+
+header nav a:hover{
+    color: var(--blue-theme)
+}
+
+.jogos-principais .box{
+    height: 400px;
+    width: 100%;
+    padding-left: 20px;
+    color: #fff;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+  
+
+}
+
+.jogos-principais .box > h3{
+    font-size: 3rem;
+}
+.jogos-principais .box > p{
+    width: 50%;
+    font-weight: bold;
+}
+
+.jogos-principais .box > button{
+    background-color:  var(--orange-theme); 
+    color: #fff;
+    border: none;
+
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+
+}
+.jogos-principais .box > button:hover{
+    background-color: #fff;
+    color: var(--orange-theme);
+    transition: 0.5s ease all;
+}
+#card1, #card2, #card3{
+    height: 500px;
+    width: 100%;
+   
+}
+
+#card1{
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('../assets/images/capa1.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#card2{
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('../assets/images/capa2.jpg') no-repeat top;
+    background-size: cover;
+}
+
+#card3{
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('../assets/images/capa3.jpg') no-repeat top;
+    background-size: cover;
+}
+
+
+
+
+
